@@ -1,0 +1,16 @@
+<div class ="container">
+  <%# <div class="col-md-12 margin-top-20per" > %>
+  <h1 class="text-center">編集</h1>
+
+    <%= form_for @tweet do |f| %>
+     <div class="form-group">
+     <%= f.label :text, '編集内容' %>
+      <%= f.text_area :text, rows: 10, class: 'form-control' %>
+     </div>
+      
+      <%= f.submit '編集', class: 'btn btn-success'%>
+    <% end %>
+      
+    </div>
+
+</div>

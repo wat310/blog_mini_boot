@@ -1,0 +1,16 @@
+<div class ="container">
+
+  <h1 class="text-center">ブログの新規投稿作成</h1>
+
+    <%= form_for @tweet do |f| %>
+     <div class="form-group">
+     <%= f.label :text, '投稿内容' %>
+      <%= f.text_area :text, rows: 10, class: 'form-control' %>
+     </div>
+      
+      <%= f.submit '新規作成', class: 'btn btn-success'%>
+    <% end %>
+      
+    </div>
+
+</div>

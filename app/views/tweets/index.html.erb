@@ -1,0 +1,8 @@
+<div class ="container">
+  <% @tweets.each do |tweet| %>
+  <%= link_to tweet do %>
+   <%= render partial: "tweet", locals: { tweet: tweet } %>
+  <% end %>
+  <% end %>
+  <%= paginate(@tweets)%>
+</div>
